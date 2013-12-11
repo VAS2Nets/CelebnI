@@ -1,0 +1,321 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-
+densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<!--Jquery Mobile-->
+<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.2.min.css">
+<!--<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.theme-1.3.2.min.css">
+<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.structure-1.3.2.min.css">-->
+<script type="text/javascript" src="jquery/jquery.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.mobile-1.3.2.min.js"></script>
+<!--Jquery Mobile-->
+<!--Phonegap and my custom js files-->
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="telephonenumber.js"></script>
+<script type="text/javascript" src="smsplugin.js"></script>
+<script type="text/javascript" src="js/myapp.js"></script>
+
+<link rel="shorcut icon" href="http://view.jquerymobile.com/1.3.2/dist/demos/favicon.ico"/>
+<title>CelebnI</title>
+<style id="custom-icon">
+.ui-icon-custom {
+	background-image: url("../../_assets/img/glyphish-icons/21-skull.png");
+	background-position: 3px 3px;
+	background-size: 70%;
+}
+.ui-panel-inner{ padding:0px;}
+.ui-title{ color:rgba(255,255,0,1); }
+.ui-btn-active .ui-btn-text{ color:rgba(0,0,0,1);
+text-shadow: 0 0 0;}
+</style>
+
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script>
+</head>
+<body>
+<!-- start of home -->
+<div data-role='page' id='home'>
+  <div data-role='header'>
+      <h2><img src="img/icon.png" alt="" /></h2>
+  </div>
+  <!-- /default panel -->
+  
+  <div data-role='content'>
+    <div class="slider-wrapper theme-default">
+      <div id="slider" class="nivoSlider"> <img src="img/d-banj.jpg" title="Celebrity Id: dbanj" alt="" data-transition="slideInLeft" /> <img src="img/wizkid.jpg" alt="" title="#htmlcaption" /> </div>
+      <div id="htmlcaption" class="nivo-html-caption"> <strong>Follow your preffered celebrities</strong> Register by Clicking <a href="#signup">Start</a>. </div>
+    </div>
+     <a href="#login" data-role="button" data-theme="e"><i class="fa fa-sign-in fa-lg"></i>   Sign in</a> <a href="#signup" data-role="button" data-theme="e"><i class="fa fa-plus-square-o fa-lg"></i>   Register</a> </div>
+  
+  <div data-role="footer">
+    <div data-role="navbar" data-iconpos="left">
+      <ul>
+        <li><a href="#login"><i class="fa fa-sign-in fa-lg"></i>  Login</a></li>
+        <li><a href="#about"><i class="fa fa-info fa-lg"></i>  About Us</a></li>
+        <li><a href="#terms"><i class="fa fa-exclamation fa-lg"></i>  Terms</a></li>
+      </ul>
+    </div>
+    <!-- /navbar -->
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /end of home --> 
+<!-- /start of about -->
+<div data-role='page' id='about'>
+
+  <div data-role='header'> 
+  <a href="#home" class="dev ui-btn-left" data-role="button" data-theme="c"><img src="img/home.png" width="16" height="16"></a>
+    <h1>About</h1>
+    <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal"><a href="#defaultpanel" data-role="button" data-theme="c"><img src="img/list.png" width="29" height="20" /></a> <a data-rel="back" data-role="button" data-theme="c">Back</a> </div>
+  </div>
+    <!--panel-->
+    <div data-role="panel" id="defaultpanel" data-theme="c" data-position="left" data-display="push">
+    <ul data-role='listview'>
+       <li><a href='#home'><i class="fa fa-home fa-lg"></i> Home</a></li>
+      <li><a href='#about'><i class="fa fa-info fa-lg"></i> About</a></li>
+      <li><a href='#login'><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+      <li><a href='#blog'><i class="fa fa-retweet fa-lg"></i> Blog</a></li>
+    </ul>
+  </div>
+    <!--<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i> Home</a></li>
+  <li><a href="#"><i class="fa fa-book fa-fw"></i> Library</a></li>
+  <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Applications</a></li>
+  <li><a href="#"><i class="fa fa-cogs fa-fw"></i> Settings</a></li>
+</ul>
+  <!--panel-->
+  <div data-role='content'>
+    <div class="about">CELEBnI is a mobile-based celebrity corner that accords user opportunities to follow up on celebrity shows,news,events and happenings in and around the corner of entertainment circle.</div>
+    <div class="h1">Partners</div>
+    <div class="h2">About VAS2Nets</div>
+    <div class="about">Giving you a mobile community... <br/>
+      Read more</div>
+    <div class="h2">About HandyFuns</div>
+    <div class="padright"><img src="img/nuke_thumb.jpg" style="float:right;"/></div>
+    <div class="about">Providing premium  voice and mobile connectivity
+      into 50 countries worldwide...<br/>
+      Read more</div>
+  </div>
+  <div data-role="footer" data-position='fixed'>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#login"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+        <li><a href="#contact" class="ui-btn-active"><i class="fa fa-info fa-lg"></i> About Us</a></li>
+        <li><a href="#sign"><i class="fa fa-plus-square-o fa-lg"></i> Sign Up</a></li>
+      </ul>
+    </div>
+    <!-- /navbar --> 
+  </div>
+  <!-- /footer --> 
+  
+</div>
+<!-- /end of about -->
+<!-- /start of login -->
+<div data-role='page' id='login'>
+  <div data-role='header'> <a href="#home" class="dev ui-btn-left" data-role="button" data-theme="c"><img src="img/home.png" width="16" height="16"></a>
+    <h1>Login</h1>
+  <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal"> <a href="#defaultpanel3" data-role="button" data-theme="c"><img src="img/list.png" width="29" height="20" /></a> <a data-rel="back" data-role="button" data-theme="c">Back</a> </div>  
+  </div>
+  <!-- /default panel3 -->
+  <div data-role="panel" id="defaultpanel3" data-theme="c" data-position="left" data-display="push">
+    <ul data-role='listview'>
+      <li><a href='#home'><i class="fa fa-home fa-lg"></i> Home</a></li>
+      <li><a href='#about'><i class="fa fa-info fa-lg"></i> About</a></li>
+      <li><a href='#login'><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+      <li><a href='#blog'><i class="fa fa-retweet fa-lg"></i> Blog</a></li>
+    </ul>
+  </div>
+  <!-- /default panel3 -->
+  
+  <div data-role='content'>
+    <div data-data-demo-html="true" id="form1">
+      <div data-demo-html="true">
+        <label for="username">Username:</label>
+        <input type="text" required="" name="username" id="username" value=""  />
+      </div>
+      <!-- /demo-html -->
+      <div data-demo-html="true">
+        <label for="phone">Phone Number:</label>
+        <input type="text" placeholder="234XXXXXXXXXX" name="phone" pattern="[0-9]*" id="phone" value="" autocomplete="off" required="" />
+      </div>
+      <!-- /demo-html -->
+      <div> <a href="#" class='show-page-loading-msg' data-role="button" id='loginbutton' data-mini="true" data-inline="true"><i class="fa fa-sign-in fa-lg"></i> Login</a> </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position='fixed'> 
+    <!-- /navbar --> 
+  </div>
+</div>
+<!-- /end of login -->
+<!-- start of signup -->
+<div data-role='page' id='signup'>
+  <div data-role='header'> <a href="#home" class="dev ui-btn-left" data-role="button" data-theme="c"><img src="img/home.png" width="16" height="16"></a>
+    <h1>Register</h1>
+  <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal"> <a href="#defaultpanel3" data-role="button" data-theme="c"><img src="img/list.png" width="29" height="20" /></a> <a data-rel="back" data-role="button" data-theme="c">Back</a> </div>  
+  </div>
+  <!-- /default panel3 -->
+  <div data-role="panel" id="defaultpanel3" data-theme="c" data-position="left" data-display="push">
+    <ul data-role='listview'>
+      <li><a href='#home'><i class="fa fa-home fa-lg"></i> Home</a></li>
+      <li><a href='#about'><i class="fa fa-info fa-lg"></i> About</a></li>
+      <li><a href='#login'><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+      <li><a href='#blog'><i class="fa fa-retweet fa-lg"></i> Blog</a></li>
+    </ul>
+  </div>
+  <!-- /default panel3 -->
+  
+  <div data-role='content'>
+    <div data-data-demo-html="true" id="registerform">
+      <div data-demo-html="true">
+        <label for="signupuser">Username:</label>
+        <input type="text" name="signupuser" id="signupuser" required="" value=""  />
+      </div>
+      <!-- /demo-html -->
+      <div data-demo-html="true">
+        <label for="signupphone">Phone Number:</label>
+        <input type="text" placeholder="234XXXXXXXXXX" name="signupphone" pattern="[0-9]*" id="signupphone" value="" required="" autocomplete="off" />
+      </div>
+      <div data-demo-html="true">
+        <label for="dceleb">Celebrity ID:</label>
+        <input type="text" name="dceleb" id="dceleb" value="" required=""  />
+      </div>
+      <!-- /demo-html -->
+      <div> <a href="#" class='show-page-loading-msg' data-role="button" id='signupbutton' data-mini="true" data-inline="true"><i class="fa fa-plus-square-o fa-lg"></i>Register</a> </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position='fixed'> 
+    <!-- /navbar --> 
+  </div>
+</div>
+<!-- /end of signup -->
+<!-- start blog page -->
+<div data-role='page' id='blog'>
+  <div data-role='header'> <a href="#home" class="dev ui-btn-left" data-role="button" data-theme="c"><img src="img/home.png" width="16" height="16"></a>
+    <h1>Blog</h1>
+   <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal"><a href="#defaultpanel4" data-role="button" data-theme="c"><img src="img/list.png" width="29" height="20" /></a> <a data-rel="back" data-role="button" data-theme="c">Back</a> </div>  
+  </div>
+  <!-- panel4-->
+  <div data-role="panel" id="defaultpanel4" data-theme="c" data-position="left" data-display="push">
+    <ul data-role="listview">
+      <li><a href='#home'><i class="fa fa-home fa-lg"></i> Home</a></li>
+      <li><a href='#about'><i class="fa fa-info fa-lg"></i> About</a></li>
+      <li><a href='#login'><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+      <li><a href='#blog'><i class="fa fa-retweet fa-lg"></i> Blog</a></li>
+    </ul>
+  </div>
+  <!-- panel4-->
+  <div data-role='content'>
+      <div data-role="navbar" style="width: 100%;">
+        <ul style="font-size: small;">
+        <li><a href="#blog" class="ui-btn-active"><i class="fa fa-comment-o fa-lg"></i> Posts</a></li>
+        <li><a href="#comment"><i class="fa fa-comments fa-lg"></i> Comments</a></li>
+        <li><a href="#send"><i class="fa fa-comments-o fa-lg"></i> Chat</a></li>
+      </ul>
+    </div>
+    <div style="margin-top: 10px;">
+      <ul data-role="listview" id="listitemm" data-divider-theme="a" data-inset="true">
+        
+      </ul>
+    </div>
+  </div>
+  <div data-role="footer" data-position='fixed'> 
+    <!-- /navbar --> 
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- start see comments -->
+<div data-role='page' id='comment'>
+  <div data-role='header'> <a href="#home" class="dev ui-btn-left" data-role="button" data-theme="c"><img src="img/home.png" width="16" height="16"></a>
+    <h1>Comment</h1>
+   <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal"> <a href="#defaultpanel6" data-role="button" data-theme="c"><img src="img/list.png" width="29" height="20" /></a> <a data-rel="back" data-role="button" data-theme="c">Back</a> </div> 
+  </div>
+   <!--panel 6-->
+  <div data-role="panel" id="defaultpanel6" data-theme="c" data-position="left" data-display="push">
+    <ul data-role='listview'>
+      <li><a href='#home'><i class="fa fa-home fa-lg"></i> Home</a></li>
+      <li><a href='#about'><i class="fa fa-info fa-lg"></i> About</a></li>
+      <li><a href='#login'><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+      <li><a href='#blog'><i class="fa fa-retweet fa-lg"></i> Blog</a></li>
+    </ul>
+  </div>
+  <!--panel 6-->
+  <div data-role='content'>
+    <div data-role="navbar">
+      <ul style="font-size: small;">
+        <li><a href="#blog"><i class="fa fa-comment-o fa-lg"></i> Posts</a></li>
+        <li><a href="#comment" class="ui-btn-active"><i class="fa fa-comments fa-lg"></i> Comments</a></li>
+        <li><a href="#send"><i class="fa fa-comments-o fa-lg"></i> Chat</a></li>
+      </ul>
+    </div>
+      <ul data-role="listview" id="listitema" data-divider-theme="a" data-inset="true">
+        
+      </ul>
+  </div>
+  <div data-role="footer" data-position='fixed'> 
+    <!-- /navbar --> 
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- start send sms -->
+<div data-role='page' id='send'>
+  <div data-role='header'><a href="#home" class="dev ui-btn-left" data-role="button" data-theme="c"><img src="img/home.png" width="16" height="16"></a>
+    <h1> Chat</h1>
+    <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal"> <a href="#defaultpanel5" data-role="button" data-theme="c"><img src="img/list.png" width="29" height="20" /></a> <a data-rel="back" data-role="button" data-theme="c">Back</a> </div>    
+  </div>
+  <!--panel 5-->
+  <div data-role="panel" id="defaultpanel5" data-theme="c" data-position="left" data-display="push">
+    <ul data-role='listview'>
+      <li><a href='#home'><i class="fa fa-home fa-lg"></i> Home</a></li>
+      <li><a href='#about'><i class="fa fa-info fa-lg"></i> About</a></li>
+      <li><a href='#login'><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+      <li><a href='#blog'><i class="fa fa-retweet fa-lg"></i> Blog</a></li>
+    </ul>
+  </div>
+  <!--panel 5-->
+  <div data-role='content'>
+    <div data-role="navbar">
+      <ul style="font-size: small;">
+        <li><a href="#blog"><i class="fa fa-comment-o fa-lg"></i> Posts</a></li>
+        <li><a href="#comment"><i class="fa fa-comments fa-lg"></i> Comments</a></li>
+        <li><a href="#send" class="ui-btn-active"><i class="fa fa-comments-o fa-lg"></i> Chat</a></li>
+      </ul>
+    </div>
+    <div data-data-demo-html="true" id="smsform">
+      <div data-demo-html="true">
+        <label for="telephoneNumber">Sender Number:</label>
+        <input type="text" name="telephoneNumber" id="telephoneNumber" value="" readonly="" />
+      </div>
+      <div data-demo-html="true">
+        <label for="phone">Phone Number:</label>
+        <input type="text" placeholder="234XXXXXXXXXX" name="phone" pattern="[0-9]*" required="" id="receiverphone" value="" />
+      </div>
+      <!-- /demo-html -->
+      <div data-demo-html="true">
+        <label for="comment">Comment:</label>
+        <textarea cols="40" rows="8" name="comment" id="smscomment" required=""></textarea>
+      </div>
+      <!-- /demo-html -->
+      <div> <a href="#" class='show-page-loading-msg' data-role="button" id='btnSmsIntent' data-inline="true">Send</a> </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position='fixed'>
+      <!-- /footer --> 
+    <div class="terms">Each comment is billed at sms rate for more read <a href="#">Terms</a></div>
+  </div>
+</div>
+</body>
+</html>

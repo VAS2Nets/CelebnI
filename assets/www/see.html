@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile Docs - Page Loading Widget</title>
+	<link rel="stylesheet"  href="http://jquerymobile.com/demos/1.2.0/css/themes/default/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet" href="http://jquerymobile.com/demos/1.2.0/docs/_assets/css/jqm-docs.css"/>
+
+	<script src="//code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="../../docs/_assets/js/jqm-docs.js"></script>
+	<script src="../../js/jquery.mobile-1.2.0.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" class="type-interior">
+	<script>
+		$(document).on("click", ".show-page-loading-msg", function() {
+			var $this = $( this ),
+				theme = $this.jqmData("theme") || $.mobile.loader.prototype.options.theme,
+				msgText = $this.jqmData("msgtext") || $.mobile.loader.prototype.options.text,
+				textVisible = $this.jqmData("textvisible") || $.mobile.loader.prototype.options.textVisible,
+				textonly = !!$this.jqmData("textonly");
+				html = $this.jqmData("html") || "";
+			$.mobile.loading( 'show', {
+					text: msgText,
+					textVisible: textVisible,
+					theme: theme,
+					textonly: textonly,
+					html: html
+			});
+		})
+		.on("click", ".hide-page-loading-msg", function() {
+			$.mobile.loading( 'hide' );
+		});
+	</script>
+
+
+		<div data-role="header" data-theme="f">
+		  <h1>Page Loading Widget</h1>
+		  <a href="../../" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		  <a href="../nav.html" data-icon="search" data-iconpos="notext" data-rel="dialog" data-transition="fade">Search</a>
+	  </div><!-- /header -->
+
+	  <div data-role="content">
